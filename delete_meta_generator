@@ -1,0 +1,7 @@
+/*
+*
+* Delete meta generator from WP header :
+* <meta name="generator" content="WordPress 2.8.4" />
+*
+*/
+add_filter( 'the_generator', create_function('$a', "return null;") );
